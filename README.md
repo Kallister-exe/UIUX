@@ -1,4 +1,4 @@
 # UIUX
-### Logi-In Credentials
+### Log-In Credentials
 * Username: 706631
 * Password: letMeIn
