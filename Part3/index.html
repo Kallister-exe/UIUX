@@ -1,3 +1,40 @@
-<head>
-    <p1>Student Mental Health App</p1>
-</head>
+<html>
+    <head>
+        <title>Home BAS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Global.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: #0B1B00;">
+
+        <img class="LogoImg" src="Images/Logo.png" alt="BAS Logo">
+        <br>
+        <h1 class = "TitleText">Home BAS</h1>
+        <h3 class = "SubtitleText">Welcome</h3>
+
+        <form onsubmit="LogIn(event)">
+            <label class="SubText" for="HC">Home Code:</label>
+            <input class="TextInput" placeholder="Home Code" type="text" id="HC" name="HC"><br><br>
+            <label class="SubText" for="pass">Password:</label>
+            <input class="TextInput" placeholder="Password" type="text" id="pass" name="pass"><br><br>
+            <input class="InputButton" style="background-color: #358600; border-color: #358600; color: #E8FFDD;" class="SubText" type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
+<script>
+    function LogIn(event) 
+    {
+        event.preventDefault();
+        let homeCode = document.getElementById("HC").value;
+        let pword = document.getElementById("pass").value;
+        if (homeCode == "706631" && pword == "letMeIn") 
+        {
+            window.location.href = "MenuPage.html";
+        }
+        else 
+        {
+            alert("incorrect credentials");
+        }
+    }
+</script> 

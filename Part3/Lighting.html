@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Lighting</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Global.css">
+        <link href="Return.js">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="BackgroundImg">
+        <div class="Header">
+            <input type="image" src="Images/back_svgrepo.com.png" style="margin-left: 2vw; height: 8vh; width: 14vw; margin-top: 1vh;" onclick="Return()">
+            <h1 class="SubtitleText" style="margin-bottom: 10vh; font-size: 32px; margin-left: 0vw; margin-top: 10vh; height: 8vh; width: 70vw; margin-right: 0;">Lighting Controls</h1>
+        </div>
+        <input class="LightingBtn" style="margin-top: 10vh;" type="button" value="Living Room" onclick="on()">
+        <input class="LightingBtn" type="button" value="Kitchen" onclick="on()">
+        <input class="LightingBtn" type="button" value="Study" onclick="on()">
+        <input class="LightingBtn" type="button" value="Bedroom 1" onclick="on()">
+        <input class="LightingBtn" type="button" value="Bedroom 2" onclick="on()">
+        <div class="overlay" id="overlay">
+            <div class="text">
+                <div style="background-color: #0B1B00; border-radius: 20px; height: 40vh; width: 84vw; margin-top: 15vh;">
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0; padding-top: 5vh;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E8FFDD;">Main Light</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E8FFDD;">Table Lamp</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E8FFDD;">Side Lamp</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="ToggleHolder" style="margin-top: 2vh; margin-bottom: 0;">
+                        <p class="SubText RoutineAlign" style=" font-size: 25px; color: #E8FFDD;">Lowlights</p>
+                        <div class="toggle-container">
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="toggleSwitch">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <input style="background-color: #63C132; border-color: #63C132; color: #E8FFDD; border-radius: 8px; height: 6vh; width: 26vw; font-family: Ubuntu; font-size: 25px; justify-content: center; margin-top: 2vh; text-align: center; align-self: center; margin-left: 29vw; margin-right: 29vw;" type="button" value="Save" onclick="off()">
+                </div>
+            </div>
+        </div> 
+    </body>
+</html>
+
+<script src="Return.js"></script>
+<script src="popup.js"></script>
